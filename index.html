@@ -5,30 +5,64 @@
 <head>
 	<!-- Title Element; What gets displayed in the tab -->
 	<title> Brendan's Site! </title>
+	<link type = "text/css" rel = "stylesheet" href = "./styling/main.css">
 </head>
 
 <!-- Main Page -->
-<div id = "Main Page">
+
+<div class = "mainpage">
 <body>
-	<h1>Brendan Alger</h1>
-<!-- Introductory Paragraph -->
-	<p>
-		This currently is and always will be a work in progress. It might not look like much now (May 17, 2018), but someday it'll be <strong>BEAUTIFUL!!</strong>
+
+<!-- Site Navigation -->
+<!--<div id = "site_links">
+<!- Unordered list to other site pages ->
+<ul>
+	<li><a href = "./aboutMe.html">About Me</a>
+	<-
+	 Hyperlink format:
+		<a href = [link here]>[Name you want link to be] </a>
+	->
+	<li> 
+		<a href = "./hist_main.html">Site History</a> 
+		<br> This is basically a blog of the site's progress... Well maybe, if I remember to keep up with it
+	</li>
+</ul>	
+</div>
+-->
+
+
+<div id = "main">
+	<h1 class = "header">Brendan Alger</h1>
+	<div class = "banner">
+		<div id = "site_links">
+		<!-- Unordered list to other site pages -->
+		<ul>
+			<li><a href = "./aboutMe.html">About Me</a>
+			<!--
+			 Hyperlink format:
+				<a href = [link here]>[Name you want link to be] </a>
+			-->
+			<li> 
+				<a href = "./hist_main.html">Site History</a> 
+				<br> This is basically a blog of the site's progress...
+				Well maybe, if I remember to keep up with it
+			</li>
+		</ul>	
+		</div>
+	</div>
+<!-- Stuff at the bottom -->
+	<p id = "footnote">
+		This currently is and always will be a work in progress. Message any suggestions at [contact info redacted]
 	</p>
 
-	<!-- Unordered list to other site pages -->
-	<ul>
-		<li><a href = "./aboutMe.html">About Me</a>
-		<!--
-		 Hyperlink format:
-			<a href = [link here]>[Name you want link to be] </a>
-		-->
-		<li> 
-			<a href = "./hist_main.html">Site History</a> 
-			<br> This is basically a blog of the site's progress... Well maybe, if I remember to keep up with it
-		</li>
-	</ul>
-</body>
+	
 </div>
 
+</body>
+</div>
+<!--
+	Linking to other parts of page:
+	Create element id
+	set href = "#[id_name]"
+--> 
 </html>

@@ -1,0 +1,46 @@
+@font-face{
+	font-family: "Minimal";
+	src:url(./fonts/prime_reg.otf);
+}
+
+body
+{
+	color: #467fa1/*#51A5BA#6BCAE2*/;
+	font-family: "Trebuchet MS";
+	background-color: #061f2b;
+}
+
+.banner
+{
+	background-image: url(../images/me.jpg);
+	background-size: cover;
+	background-position: right;
+	height: 600px;
+}
+#site_links
+{
+	position: relative; /*Makes sure relative to start of section*/
+	text-align: left;
+	background-color: #061f2b;
+	opacity: .75;
+	padding: 5px;
+	top: 4%; /* Starts 4% from top of element start */
+	height: 90%; /* 90% of full element size */
+	margin-left: 10px; /* 10 pixels right of section */
+	width: 25%; /* 25% of full element width */
+}
+#site_links a, .header
+{
+	font-family: Minimal;
+	color: #c0c0c0;
+}
+
+#main
+{
+	text-align: center;
+}
+
+#footnote
+{
+	font-size: 10px;
+}

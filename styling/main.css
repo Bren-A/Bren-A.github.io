@@ -14,25 +14,93 @@ body
 {
 	background-image: url(../images/me.jpg);
 	background-size: cover;
-	background-position: right;
+	background-position: center;
 	height: 600px;
 }
-#site_links
+#nav_links
 {
-	position: relative; /*Makes sure relative to start of section*/
-	text-align: left;
+	position: static; /*Makes sure relative to start of section*/
+	text-align: center;
 	background-color: #061f2b;
 	opacity: .75;
-	padding: 5px;
+	padding-top: 5px;
+	padding-left: 5px;
 	top: 4%; /* Starts 4% from top of element start */
-	height: 90%; /* 90% of full element size */
-	margin-left: 10px; /* 10 pixels right of section */
-	width: 25%; /* 25% of full element width */
+	height: 6%; /* 90% of full element size */
+	margin: 5px 10px; /* 10 pixels right of section */
+	/*width: 25%; /* 25% of full element width */
+	/*border-radius: 5px;*/
 }
-#site_links a, .header
+
+#nav_links ul
+{
+	list-style-type: none; /* Removes bullets */
+	margin: 0;
+	padding: 0;
+}
+#nav_links li
+{
+	float: left; /* Makes list Horizontal */
+	padding: 0px 1px;
+}
+#nav_links a
+{
+	display: block;
+	padding: 6px 11px;
+	border-radius: 5px;
+}
+
+#nav_links a:hover /* Changes color when mouse hovers over link */
+{
+	background-color: #467fa1;
+	color: white;
+}
+
+#nav_links a:link, a:visited /* Remove underline/highlighting from hyperlinks */
+{
+	text-decoration: none;
+}
+
+#nav_links a, .header
 {
 	font-family: Minimal;
 	color: #c0c0c0;
+}
+
+.about
+{
+	position: relative;
+	width: 30%;
+	height: 87%;
+	margin-left: 25px;
+	margin-top: 15px;
+	border-radius: 15px;
+	/*background-color: rgb(70, 127, 161, .25);*/
+	background-color: rgb(255, 255, 255, .25);
+	color: #061f2b;
+	opacity: .8;
+}
+
+.about h2
+{
+	border-bottom: solid thin #061f2b;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 5px;
+	font-size: 40px
+}
+
+.about p
+{
+	padding: 0px 15px 10px 15px;
+	text-align: center;
+	font-size: 29px;
+}
+
+#body
+{
+	margin-top: 0px;
+	padding: 0px 30px;
 }
 
 #main

@@ -1,0 +1,71 @@
+html
+{
+	height: 100%;
+}
+body
+{
+	color: #F0F0F0; /* Font Color */
+	background-color: #181712;
+	font-family: Courier;
+	height: 100%;
+}
+h1, h2, h3
+{
+	font-family: Arial;
+	
+}
+
+#main
+{
+	text-align: center;
+	margin: 0%;
+	height: 100%;
+}
+
+.nav_links 
+{
+	background-color: #757571;
+	color: #B0ABA0;
+	border: solid thick #B0ABA0;
+}
+
+.nav_links ul
+{
+	list-style-type: none; /* Remove bullet points */
+}
+
+/*.nav_links li
+{
+	float: left; /* Change to Horizontal
+	padding: 0px 15px;
+}*/
+
+.nav_links a /* Keeps font color white even after visiting */
+{
+	color: #B0ABA0;
+}
+
+
+.nav_links a:link, a:visited /* Do not highlight when link clicked previously */
+{
+	text-decoration: none;
+}
+
+.nav_links a:hover /* Change color when mouse over */
+{
+	color: #6ABED8;
+}
+
+
+.name
+{
+	text-align: left;
+}
+
+#about
+{
+	padding-top: 0px;
+	background-image: url(./IMG_0152.jpg);
+	background-size: cover;
+	height: 100%;
+}

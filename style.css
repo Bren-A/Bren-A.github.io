@@ -65,7 +65,8 @@ h1, h2, h3
 #about
 {
 	padding-top: 0px;
-	background-image: url(./IMG_0152.jpg);
-	background-size: cover;
-	height: 100%;
+	background-image: url(./backa.jpg);
+	background-size: 100%; /* Ensure shows whole width of image */
+	height: 100%; /* Make sure to cover entire area */
+	background-repeat: no-repeat; /* Does not repeat if shows whole image without covering entire area */
 }

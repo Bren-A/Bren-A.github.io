@@ -64,9 +64,10 @@ h1, h2, h3
 #about
 {
 	/* Places text in center of page */
-	position: absolute; /* Make sure it's relative to div it's in (i.e. the background image) */
+	position: absolute; /* Make it based on #main box */
 	top: 50%; /* Moves down halfway */
-	left: 50%; /* Moves right Halfway */
-	transform: translate(-50%, -50%); /* Moves box left and up accordingly? NEED TO LEARN */
+	left: 0; /* Moves all the way left */
+	width: 100%; /* Stretch to whole screen */
+	transform: translate(0, -50%); /* translate(x, y) */
 }
 

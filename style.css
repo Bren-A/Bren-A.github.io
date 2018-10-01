@@ -18,7 +18,7 @@ h1, h2, h3
 #main
 {
 	text-align: center;
-
+	position: relative;
 	background-image: url(./backa.jpg); /* Add background image to homepage */
 	background-size: 100%; /* Ensure shows whole width of image */
 	height: 100%; /* Make sure to cover entire area */
@@ -64,7 +64,7 @@ h1, h2, h3
 #about
 {
 	/* Places text in center of page */
-	position: relative;
+	position: absolute; /* Make sure it's relative to div it's in (i.e. the background image) */
 	top: 50%; /* Moves down halfway */
 	left: 50%; /* Moves right Halfway */
 	transform: translate(-50%, -50%); /* Moves box left and up accordingly? NEED TO LEARN */

@@ -41,7 +41,7 @@ h1, h2, h3
 .nav_links li
 {
 	margin-top: -6px;
-	margin-left: -2%; /* Need to learn why it isn't centered perfectly */
+	margin-left: -1%; /* Need to learn why it isn't centered perfectly */
 	float: left; /* Change to Horizontal */
 }
 

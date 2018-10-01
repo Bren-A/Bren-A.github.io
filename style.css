@@ -18,15 +18,19 @@ h1, h2, h3
 #main
 {
 	text-align: center;
-	margin: 0%;
-	height: 100%;
+
+	background-image: url(./backa.jpg); /* Add background image to homepage */
+	background-size: 100%; /* Ensure shows whole width of image */
+	height: 100%; /* Make sure to cover entire area */
+	background-repeat: no-repeat; /* Does not repeat if shows whole image without covering entire area */
 }
 
 .nav_links 
 {
-	background-color: #757571;
-	color: #B0ABA0;
-	border: solid thick #B0ABA0;
+	/* background-color: #181712 /*#757571*/;
+	display: inline-block;
+	border-radius: 3px;
+	border: solid thick #F0F0F0;
 }
 
 .nav_links ul
@@ -34,17 +38,18 @@ h1, h2, h3
 	list-style-type: none; /* Remove bullet points */
 }
 
-/*.nav_links li
+.nav_links li
 {
-	float: left; /* Change to Horizontal
-	padding: 0px 15px;
-}*/
-
-.nav_links a /* Keeps font color white even after visiting */
-{
-	color: #B0ABA0;
+	margin-top: -6px;
+	margin-left: -2%; /* Need to learn why it isn't centered perfectly */
+	float: left; /* Change to Horizontal */
 }
 
+.nav_links a /* Keeps font color same even after visiting */
+{
+	color: #F0F0F0;
+	padding: 5px 20px;
+}
 
 .nav_links a:link, a:visited /* Do not highlight when link clicked previously */
 {
@@ -56,17 +61,12 @@ h1, h2, h3
 	color: #6ABED8;
 }
 
-
-.name
-{
-	text-align: left;
-}
-
 #about
 {
-	padding-top: 0px;
-	background-image: url(./backa.jpg);
-	background-size: 100%; /* Ensure shows whole width of image */
-	height: 100%; /* Make sure to cover entire area */
-	background-repeat: no-repeat; /* Does not repeat if shows whole image without covering entire area */
+	/* Places text in center of page */
+	position: absolute;
+	top: 50%; /* Moves down halfway */
+	left: 50%; /* Moves right Halfway */
+	transform: translate(-50%, -50%); /* Moves box left and up accordingly? NEED TO LEARN */
 }
+

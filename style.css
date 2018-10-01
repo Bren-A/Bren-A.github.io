@@ -68,5 +68,6 @@ h1, h2, h3
 	top: 50%; /* Moves down halfway */
 	left: 0; /* Moves all the way left */
 	width: 100%; /* Stretch to whole screen */
+	transform: translate(0, -50%); /* translate(x, y); center the box better */
 }
 

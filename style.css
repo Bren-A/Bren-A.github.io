@@ -2,6 +2,7 @@ html
 {
 	height: 100%;
 }
+
 body
 {
 	color: #F0F0F0; /* Font Color */
@@ -9,10 +10,10 @@ body
 	font-family: Courier;
 	height: 100%;
 }
+
 h1, h2, h3
 {
 	font-family: Arial;
-	
 }
 
 #main

@@ -7,13 +7,13 @@ body
 {
 	color: #F0F0F0; /* Font Color */
 	background-color: #181712;
-	font-family: Courier;
+	font-family: Arial /* Courier */;
 	height: 100%;
 }
 
 h1, h2, h3
 {
-	font-family: Arial;
+	font-family: Verdana;
 }
 
 #main
@@ -28,10 +28,7 @@ h1, h2, h3
 
 .nav_links 
 {
-	/* background-color: #181712 /*#757571*/;
 	display: inline-block;
-	border-radius: 3px;
-	border: solid thick #F0F0F0;
 }
 
 .nav_links ul
@@ -41,8 +38,7 @@ h1, h2, h3
 
 .nav_links li
 {
-	margin-top: -6px;
-	margin-left: -1%; /* Need to learn why it isn't centered perfectly */
+	margin-left: -2%; /* Need to learn why it isn't centered perfectly */
 	float: left; /* Change to Horizontal */
 }
 
@@ -65,7 +61,7 @@ h1, h2, h3
 #about
 {
 	/* Places text in center of page */
-	position: absolute; /* Make it based on #main box */
+	position: fixed; /* Make it based on #main box */
 	top: 50%; /* Moves down halfway */
 	left: 0; /* Moves all the way left */
 	width: 100%; /* Stretch to whole screen */

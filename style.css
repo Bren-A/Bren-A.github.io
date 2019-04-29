@@ -6,8 +6,8 @@ html
 body
 {
 	color: #F0F0F0; /* Font Color */
-	background-color: #181712;
-	font-family: Arial /* Courier */;
+	background-color: #212121;
+	font-family: Bookman /* Courier */;
 	height: 100%;
 }
 
@@ -20,7 +20,6 @@ h1, h2, h3
 {
 	text-align: center;
 	position: relative;
-	background-image: url(./backa.jpg); /* Add background image to homepage */
 	background-size: 100%; /* Ensure shows whole width of image */
 	height: 100%; /* Make sure to cover entire area */
 	background-repeat: no-repeat; /* Does not repeat if shows whole image without covering entire area */

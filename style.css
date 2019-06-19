@@ -14,33 +14,31 @@ body
     color: #F0F0F0; /* Font Color */
     background-color: #212121;
     font-family: Minimal;
-    height: 100%;
-}
-
-h1, h2, h3
-{
-    font-family: Minimal;
+    min-height: 100%;
 }
 
 /* Modify size of the name's text */
 #name
 {
-    color: #6A91C4;
-    font-size: 5em;
+    color: #6084B4;
+    font-size: 500%;
+	margin-bottom: 0px;
 }
 
 .nav_links ul
-{   /* Prevents each item in list from overlapping items */
+{   
+	margin-top: 10px;
+	/* Prevents each item in list from overlapping items */
     display: inline-block;
     /* Remove bullet points from unordered lists */
     list-style-type: none; 
-    font-size: 1.5em;
+    font-size: 150%;
 }
 
 .nav_links li
 {
     /* List is skewed to the right, move from center */
-    margin-left: -4%; 
+    margin-left: -2%;
     /* Change list to overlap on left */
     /* However list won't ovelap due to inline-block property of unordered list */
     float: left; 
@@ -62,9 +60,10 @@ h1, h2, h3
 }
 
 /* Link mouseover properties */
-.nav_links a:hover /* Change color when mouse over */
+.nav_links a:hover 
 {
-    color: #6A91C4;
+    /* Change color when mouse over */
+    color: #6084B4;
 }
 
 #about

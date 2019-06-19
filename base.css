@@ -1,0 +1,49 @@
+/* Import Fonts */
+@font-face{
+    font-family: "Minimal";
+    src:url(./fonts/Gidole-Regular.otf);
+}
+
+html, body
+{
+	min-height:100%;
+	min-width: 100%
+}
+
+body
+{
+    color: #F0F0F0; /* Font Color */
+    background-color: #212121;
+    font-family: Minimal;
+}
+
+/* Modify size of h1 text */
+h1
+{
+    color: #6084B4;
+    font-size: 300%;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+/* about body properties */
+#description
+{
+	/* Change line spacing to 1.5 space*/
+	line-height: 1.5em;
+}
+
+/* Modify about box description */
+#about_box
+{
+	/* Move it a little away from the edges of the screen */
+	margin: 1.5%;
+	/* Keep border slightly away from text */
+	padding: .5% 1%;
+	/* Round box corners */
+	border-radius: 3%;
+	/* Let the background color of the about box be slightly lighter #414447*/
+	background-color: #262626;
+	width: 30%;
+	min-height: 90%;
+}

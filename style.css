@@ -16,6 +16,11 @@ body
     font-family: Minimal;
     min-height: 100%;
 }
+img
+{
+    max-height: 5%;
+    max-width: 5%;
+}
 
 /* Modify size of the name's text */
 #name

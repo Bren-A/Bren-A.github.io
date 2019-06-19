@@ -15,8 +15,16 @@ body
     color: #F0F0F0; /* Font Color */
     background-color: #212121;
     font-family: Minimal;
+    /* Keep all items slightly away from edges */
+    padding: 1.5%;
 }
 
+img
+{
+    max-height: 16%;
+    max-width: 16%;
+    margin: 0% 7%;
+}
 /* Modify size of h1 text */
 h1
 {
@@ -36,8 +44,6 @@ h1
 /* Modify about box description */
 #about_box
 {
-	/* Move it a little away from the edges of the screen */
-	margin: 1.5%;
 	/* Keep border slightly away from text */
 	padding: .5% 1%;
 	/* Round box corners */

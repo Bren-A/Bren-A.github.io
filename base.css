@@ -42,11 +42,17 @@ h1
 	grid-template-columns: 1fr;
 	}
 /* For mobile/tablet configurations change to a single column instead of two */
-@media (min-width: 600px) {  
+@media (min-width: 37em) {  
     #wrapper 
     { 
         grid-template-columns: 1fr 2fr;
     }
+
+    #nav_links
+	{
+		/* Shift list down towards center more if two columns*/
+		justify-content: center;
+	}
 }
 /* ABOUT ME SECTION */
 /* Graphic art of me properties*/
@@ -80,14 +86,6 @@ h1
 }
 /* END ABOUT ME SECTION */
 
-/* Shift list down towards center more if two columns */
-@media (min-width: 600px)
-{
-	#nav_links
-	{
-		margin-top: 33%;
-	}
-}
 #element
 {
 	/* Keep border slightly away from text */

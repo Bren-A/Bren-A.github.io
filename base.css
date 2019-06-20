@@ -38,13 +38,14 @@ h1
 	/* Can specify between rows/columns individually */
 	grid-gap: 4%;
 	/* Distibution of columns */
-	grid-template-columns: 1fr 2fr;
-}
+	/* Use mobile default */
+	grid-template-columns: 1fr;
+	}
 /* For mobile/tablet configurations change to a single column instead of two */
-@media (max-width: 600px) {  
+@media (min-width: 600px) {  
     #wrapper 
     { 
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 2fr;
     }
 }
 /* ABOUT ME SECTION */

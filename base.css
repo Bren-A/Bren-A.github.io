@@ -42,7 +42,7 @@ h1
 	grid-template-columns: 1fr;
 	}
 /* For mobile/tablet configurations change to a single column instead of two */
-@media (min-width: 37em) {  
+@media only screen and (min-width: 37em) {  
     #wrapper 
     { 
         grid-template-columns: 1fr 2fr;

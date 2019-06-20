@@ -12,6 +12,7 @@ html, body
 
 body
 {
+	position: absolute;
     color: #F0F0F0; /* Font Color */
     background-color: #212121;
     font-family: Minimal;
@@ -19,12 +20,6 @@ body
     padding: 1.5%;
 }
 
-img
-{
-    max-height: 16%;
-    max-width: 16%;
-    margin: 0% 7%;
-}
 /* Modify size of h1 text */
 h1
 {
@@ -34,15 +29,39 @@ h1
 	margin-top: 0px;
 }
 
-/* about body properties */
-#description
+/* Change each section into a grid */
+#wrapper
 {
-	/* Change line spacing to 1.5 space*/
-	line-height: 1.5em;
+	/* Turn into CSS grid */
+	display: grid;
+	/* Amount of space between items */
+	/* Can specify between rows/columns individually */
+	grid-gap: 4%;
+	/* Distibution of columns */
+	grid-template-columns: 1fr 2fr;
+}
+/* For mobile/tablet configurations change to a single column instead of two */
+@media (max-width: 600px) {  
+    #wrapper 
+    { 
+        grid-template-columns: 1fr;
+    }
+}
+/* ABOUT ME SECTION */
+/* Graphic art of me properties*/
+#self > img
+{
+	/* Have object cover entire cell area */
+    object-fit: cover;
+    /* Make it 86% of element area */
+    /* Height will automatically scale */
+  	width: 86%;
+  	/* Add margins to photo */
+    margin: 0% 7%;
 }
 
 /* Modify about box description */
-#about_box
+#about_section
 {
 	/* Keep border slightly away from text */
 	padding: .5% 1%;
@@ -50,6 +69,31 @@ h1
 	border-radius: 3%;
 	/* Let the background color of the about box be slightly lighter #414447*/
 	background-color: #262626;
-	width: 30%;
-	min-height: 90%;
+
 }
+/* about body properties */
+#description
+{
+	/* Change line spacing to 1.5 space*/
+	line-height: 1.5em;
+}
+/* END ABOUT ME SECTION */
+
+/* Shift list down towards center more if two columns */
+@media (min-width: 600px)
+{
+	#nav_links
+	{
+		margin-top: 33%;
+	}
+}
+#element
+{
+	/* Keep border slightly away from text */
+	padding: .5% 1%;
+	/* Round box corners */
+	border-radius: 3%;
+	/* Let the background color of the about box be slightly lighter #414447*/
+	background-color: #262626;
+}
+

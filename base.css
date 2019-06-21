@@ -121,14 +121,27 @@ a:hover h1
 {
 	/* Keep border slightly away from text */
 	padding: .5% 1%;
-	/* Round box corners */
-	border-radius: 3%;
 	margin-bottom: 2%;
 	/* Let the background color of the about box be slightly lighter #414447
 	background-color: #262626;*/
 	border-bottom: 2px solid #303030;
+	/* Readjust box height to fit image size */
+	overflow: hidden;
+	/* Keeps div height limited to ensure image doesn't overflow */
+	height: 4em;
 }
-
+#element > img
+{
+	object-fit: contain;
+	max-height: 100%;
+	max-width: auto;
+	float: left;
+}
+#element h1
+{
+	margin-top: 1%;
+	margin-left: 9%;
+}
 /*
 #overlay
 {

@@ -125,8 +125,6 @@ a:hover h1
 	/* Let the background color of the about box be slightly lighter #414447
 	background-color: #262626;*/
 	border-bottom: 2px solid #303030;
-	/* Readjust box height to fit image size */
-	overflow: hidden;
 	/* Keeps div height limited to ensure image doesn't overflow */
 	height: 4em;
 }
@@ -134,13 +132,17 @@ a:hover h1
 {
 	object-fit: contain;
 	max-height: 100%;
-	max-width: auto;
+	/* makes sure that widths do not exceed 8% of div width */
+	/* h1 is 10% away from left, so leaves 2% gap at least */
+	max-width: 8%;
+	/* Allows text to immediately follow image */
 	float: left;
 }
 #element h1
 {
+
 	margin-top: 1%;
-	margin-left: 9%;
+	margin-left: 10%;
 }
 /*
 #overlay

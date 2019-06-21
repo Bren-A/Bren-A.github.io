@@ -58,7 +58,7 @@ a:hover h1
 	}
 
 /* For mobile/tablet configurations change to a single column instead of two */
-@media only screen and (min-width: 37em) {  
+@media screen and (min-width: 37em) {  
     #wrapper 
     { 
         grid-template-columns: 1fr 2fr;

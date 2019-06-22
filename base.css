@@ -38,6 +38,16 @@ h1
 	line-height: 1em;
 }
 
+h2
+{
+    color: #6084B4;
+    font-size: 150%;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	/* Ensure spaced properly when screen size changes */
+	line-height: 1em;
+}
+
 /* Link properties */
 /* Visited link properties */
 a:link, a:visited 
@@ -47,7 +57,7 @@ a:link, a:visited
 }
 
 /* Link mouseover properties */
-a:hover h1
+a:hover h2
 {
     /* Change color when mouse over */
     color: #F0F0F0;
@@ -144,24 +154,31 @@ a:hover h1
 {	
 	/* Prevent image overflow out of container */
 	object-fit: contain;
+	/* make image stretch to full size in box */
 	max-height: 100%;
+	/* Float left to allow text to be on same line */
 	float: left;
 }
 
 .collapsible h1
 {
-	margin-left: 1.5em;
+	/* Keep title name gap same from side */
+	margin-left: 2em;
+	margin-top: .2em;
 }
 
 .active, .collapsible:hover {
-  background-color: #303030;
+    background-color: #303030;
 }
 
 .content {
-  padding: 0 1%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #262626;
-  margin-bottom: 2%;
+    padding: 0% 1%;
+    /* Prevent invisible box from taking up space when unseen */
+    overflow: hidden;
+    /* Initial height of content */
+    max-height: 0;
+    /* Transition content box to max height in .2s */
+    transition: max-height 0.2s ease-out;
+    background-color: #262626;
+    margin-bottom: 1%;
 }

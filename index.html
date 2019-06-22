@@ -51,31 +51,34 @@
 	<div id = "nav_links">
 		<button class="collapsible"><img src = "./document.png"><h1>Resume</h1></button>
 		<div class="content">
-		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  	<p>A current copy of my resume.</p>
 		 	<br>
-		 	<a href = "./General.pdf">Open resume here</a>
+		 	<a href = "./General.pdf"><h2>Open resume here</h2></a>
 		</div>
 		<button class="collapsible"><img src = "./Github.png"><h1>Github</h1></button>
 		<div class="content">
-		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    <p>Link to my Github profile containing some of the projects I have previously worked on.</p>
 		    <br>
-		    <a href = "https://github.com/Bren-A/">Open github here</a>
+		    <a href = "https://github.com/Bren-A/"><h2>Open github here</h2></a>
 		</div>
 
 		<!-- Simple javascript function reveals div on click -->
 		<script>
+		// Save var as list of elements with class "collapsible"
 		var coll = document.getElementsByClassName("collapsible");
-		var i;
-
-		for (i = 0; i < coll.length; i++) {
+		// Iterate through all elements with collapsible term
+		for (var i = 0; i < coll.length; i++) {
+			// Add property to each div that will make it keep track of click on div
 		  coll[i].addEventListener("click", function() {
 		    this.classList.toggle("active");
+		    // On next element
 		    var content = this.nextElementSibling;
-		    if (content.style.maxHeight){
+		    // If already max height, remove max height
+		    if (content.style.maxHeight)
 		      content.style.maxHeight = null;
-		    } else {
+		  	// Otherwise set maxHeight to height of box.
+		    else
 		      content.style.maxHeight = content.scrollHeight + "px";
-		    } 
 		  });
 		}
 		</script>

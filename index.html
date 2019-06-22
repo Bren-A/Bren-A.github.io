@@ -74,30 +74,12 @@
                 to craft projects and notes.
             </p>
             <br>
-            <a href = "https://github.com/Bren-A/"><h2>Open github here</h2></a>
+            <a href = "./oops.jpg"><h2>Go to blog homepage here</h2></a>
             <br>
         </div>
 
         <!-- Simple javascript function reveals div on click -->
-        <script>
-        // Save var as list of elements with class "collapsible"
-        var collapsibles = document.getElementsByClassName("collapsible");
-        // Iterate through all elements with collapsible term
-        for (var i = 0; i < collapsibles.length; i++) {
-            // Add property to each div that will make it keep track of click on div
-          collapsibles[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            // On next element
-            var content = this.nextElementSibling;
-            // If already max height, remove max height
-            if (content.style.maxHeight)
-                content.style.maxHeight = null;
-            // Otherwise set maxHeight to height of box.
-            else
-                content.style.maxHeight = content.scrollHeight + "px";
-          });
-        }
-        </script>
+        <script src = "collapse.js"></script>
 
     </div>
     <!-- Keep this info at the bottom of the page -->

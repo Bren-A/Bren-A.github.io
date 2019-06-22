@@ -4,10 +4,13 @@
 <head>
 	<title> About Me </title>
 	<link type = "text/css" rel = "stylesheet" href = "./base.css">
+	
+	
 </head>
 
 <!-- Main body -->
 <body>
+
 <!-- Necessary for proper scaling when in mobile -->
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <!-- CSS Grid Wrapper -->
@@ -46,20 +49,37 @@
 	</div>
 
 	<div id = "nav_links">
-		<!-- Resume item --->
-		<div id = "element">
-			<img src = "./document.png">
-			<a href = "./General.pdf"><h1>Resume</h1></a>
-			<!--div id = "overlay">
-				<div id = "text">Test</div>
-			</div-->
+		<button class="collapsible"><img src = "./document.png"><h1>Resume</h1></button>
+		<div class="content">
+		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		 	<br>
+		 	<a href = "./General.pdf">Open resume here</a>
+		</div>
+		<button class="collapsible"><img src = "./Github.png"><h1>Github</h1></button>
+		<div class="content">
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    <br>
+		    <a href = "https://github.com/Bren-A/">Open github here</a>
 		</div>
 
-		<!-- Github item -->
-		<div id = "element">
-			<img src = "./Github.png">
-			<a href = "https://github.com/Bren-A/"><h1>Github</h1></a>
-		</div>
+		<!-- Simple javascript function reveals div on click -->
+		<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var content = this.nextElementSibling;
+		    if (content.style.maxHeight){
+		      content.style.maxHeight = null;
+		    } else {
+		      content.style.maxHeight = content.scrollHeight + "px";
+		    } 
+		  });
+		}
+		</script>
+
 	</div>
 	<!-- Keep this info at the bottom of the page -->
 	<div id = "bottom", style = "font-size: 2em; color: #6084B4;">

@@ -6,6 +6,7 @@
 
 html, body
 {
+	/* Expand dimensions to whole screen */
 	min-height:100%;
 	min-width: 100%;
 	/* Must change html background color and not body */
@@ -24,7 +25,7 @@ body
     color: #F0F0F0; 
     font-family: Minimal;
     /* Keep all items slightly away from edges */
-    padding: 1.5%;
+    padding: 1%;
 }
 
 /* Modify size of h1 text */
@@ -74,27 +75,22 @@ a:hover h2
 	/* Distibution of columns */
 	/* Use mobile default */
 	grid-template-columns: 1fr;
-	}
-
-/* For mobile/tablet configurations change to a single column instead of two */
-@media screen and (min-width: 37em) {  
-    #wrapper 
-    { 
-        grid-template-columns: 1fr 2fr;
-    }
-
-    #nav_links
-	{
-		margin-top: 30%
-	}
 }
-/* ABOUT ME SECTION */
+
+
+#title
+{
+	grid-column: 1 / -1;
+}
+
 #title h1
 {
 	font-size: 350%;
 	text-align: center;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 }
+/* ABOUT ME SECTION */
+
 /* Graphic art of me properties*/
 
 #self > img
@@ -103,9 +99,9 @@ a:hover h2
     object-fit: cover;
     /* Make it 86% of element area */
     /* Height will automatically scale */
-  	width: 86%;
+  	width: 60%;
   	/* Add margins to photo */
-    margin: 0% 7%;
+    margin: 0% 20%;
 }
 
 /* Modify about box description */
@@ -146,8 +142,6 @@ a:hover h2
   text-align: left;
   /* Set max button height */
   height: 6em;
-  /* Soften corners by rounding them slightly */
-  border-radius: 3%;
 }
 
 .collapsible img
@@ -181,4 +175,33 @@ a:hover h2
     transition: max-height 0.2s ease-out;
     background-color: #262626;
     margin-bottom: 1%;
+}
+
+#bottom
+{
+	text-align: center;
+	padding: 1%;
+}
+/* For desktop configurations set columns to two */
+@media screen and (min-width: 37em) {  
+    #wrapper 
+    { 
+        grid-template-columns: 2fr 4fr;
+    }
+
+    #nav_links
+	{
+		margin-top: 20%;
+	}
+	#bottom
+	{
+		grid-column: 1 / -1;
+		border-top: 2px solid #303030;
+	}
+	#title h1
+	{
+		margin-bottom: 0%;
+		border-bottom: 2px solid #303030;
+		padding-bottom: .5%;
+	}
 }

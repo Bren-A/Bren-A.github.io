@@ -15,3 +15,30 @@ for (var i = 0; i < collapsibles.length; i++) {
         content.style.maxHeight = content.scrollHeight + "px";
   });
 }
+
+window.addEventListener("scroll", function() {
+    var elem = document.querySelector('#entrance');
+    var bounding = elem.getBoundingClientRect();
+    console.log(bounding);
+    console.log(window.innerHeight);
+    if (bounding.bottom < 0) 
+    {
+        elem.style.display = 'none';
+        console.log("outside!!");
+    }
+});
+// Animation for entrance to site.
+/* Mainpage banner is clicked then scrolls down to actual page.
+ * Once scrolled down to actual page, banner is closed.
+ */
+// Scrolls down to link instead of immediately going to it.
+jQuery('.scroll').click(function(e){
+    var jump = $(this).attr('href');
+    var new_position = $(jump).offset();
+    $('html, body').stop().animate({ scrollTop: new_position.top }, 800);
+    e.preventDefault();
+    // Wait until after scrolled down then hide entrance page
+    setTimeout(function() {$('#entrance').hide();}, 900);
+    
+
+});

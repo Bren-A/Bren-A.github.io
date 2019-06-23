@@ -16,6 +16,7 @@ html, body
 	/* Prevents box sizes to overflow past sides */
 	/* i.e. prevents horizonal scroll */
 	box-sizing: border-box;
+	margin: 0px 0px;
 }
 
 body
@@ -25,7 +26,6 @@ body
     color: #F0F0F0; 
     font-family: Minimal;
     /* Keep all items slightly away from edges */
-    padding: 1%;
 }
 
 /* Modify size of h1 text */
@@ -67,6 +67,7 @@ a:hover h2
 /* Change each section into a grid */
 #wrapper
 {
+	padding: 2%;
 	/* Turn into CSS grid */
 	display: grid;
 	/* Amount of space between items */
@@ -77,7 +78,30 @@ a:hover h2
 	grid-template-columns: 1fr;
 }
 
+#entrance
+{
+	height: 100vh;
+	min-width: 100%;
+	background-image: url("./entrance.png");
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
 
+#entrance > a, #entrance > a:link, #entrance a:visited
+{
+	margin: 0;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    text-decoration: none;
+    color: #F0F0F0;
+    border: 3px solid #F0F0F0;
+    padding: 0% 3%;
+}
 #title
 {
 	grid-column: 1 / -1;
@@ -113,7 +137,6 @@ a:hover h2
 	border-radius: 3%;
 	/* Let the background color of the about box be slightly lighter #414447*/
 	background-color: #262626;
-
 }
 /* about body properties */
 #description
@@ -163,6 +186,7 @@ a:hover h2
 
 .active, .collapsible:hover {
     background-color: #303030;
+    transition: .2s;
 }
 
 .content {

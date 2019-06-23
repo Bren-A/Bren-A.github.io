@@ -4,21 +4,28 @@
 <head>
     <title> About Me </title>
     <link type = "text/css" rel = "stylesheet" href = "./base.css">
-    
-    
+    <!-- Import jQuery package -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <!-- Main body -->
 <body>
-
 <!-- Necessary for proper scaling when in mobile -->
 <meta content="width=device-width, initial-scale=1" name="viewport" />
+<div id="entrance">
+        <a class="scroll" href="#title">Enter</a>
+</div>
+
+
 <!-- CSS Grid Wrapper -->
 <div id = "wrapper">
+    
+
     <!-- My name -->
-        <div id = "title">
-            <h1>Brendan Alger</h1>
-        </div>
+    <div id = "title">
+        <h1>Brendan Alger</h1>
+    </div>
+    <!-- Profile and description -->
     <div id = "description">
         
         <!-- Graphic art -->
@@ -46,12 +53,13 @@
                 interests from origami to classic car restoration.
                 </p>
                 <p>
-                Below are some links to access information about me and some of my side projects/hobbies.
+                On this page you will find some links to access information about me and some of my side projects/hobbies.
                 </p>
             </div>
         </div>
     </div>
 
+    <!-- Links and description leading to other pages -->
     <div id = "nav_links">
         <button class="collapsible"><img src = "./document.png"><h1>Resume</h1></button>
         <div class="content">
@@ -82,13 +90,12 @@
         <script src = "collapse.js"></script>
 
     </div>
+
     <!-- Keep this info at the bottom of the page -->
     <div id = "bottom", style = "font-size: 2em; color: #6084B4;">
         <b>Endpage</b>
     </div>
 <!-- End CSS Grid -->
 </div>
-
-
 </body>
 </html>

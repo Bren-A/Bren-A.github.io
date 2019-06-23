@@ -16,7 +16,8 @@ for (var i = 0; i < collapsibles.length; i++) {
   });
 }
 
-window.addEventListener("scroll", function() {
+var remove_home = 
+function() {
     var elem = document.querySelector('#entrance');
     var bounding = elem.getBoundingClientRect();
     console.log(bounding);
@@ -25,8 +26,11 @@ window.addEventListener("scroll", function() {
     {
         elem.style.display = 'none';
         console.log("outside!!");
+        window.removeEventListener("scroll", remove_home);
     }
-});
+};
+window.addEventListener("scroll", remove_home);
+
 // Animation for entrance to site.
 /* Mainpage banner is clicked then scrolls down to actual page.
  * Once scrolled down to actual page, banner is closed.

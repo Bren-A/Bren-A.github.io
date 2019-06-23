@@ -64,20 +64,8 @@ a:hover h2
     color: #F0F0F0;
 }
 
-/* Change each section into a grid */
-#wrapper
-{
-	padding: 2%;
-	/* Turn into CSS grid */
-	display: grid;
-	/* Amount of space between items */
-	/* Can specify between rows/columns individually */
-	grid-gap: 4%;
-	/* Distibution of columns */
-	/* Use mobile default */
-	grid-template-columns: 1fr;
-}
 
+/* LANDING PAGE PROPERTIES */
 #entrance
 {
 	height: 100vh;
@@ -92,7 +80,7 @@ a:hover h2
 {
 	margin: 0;
     position: absolute;
-    top: 88%;
+    top: 75%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -102,6 +90,27 @@ a:hover h2
     border: 3px solid #F0F0F0;
     padding: 0% 3%;
 }
+/* END LANDING PAGE PROPERTIES */
+
+
+/* GRID PROPERTIES */
+/* Change each section into a grid */
+#wrapper
+{
+	padding: 2%;
+	/* Turn into CSS grid */
+	display: grid;
+	/* Amount of space between items */
+	/* Can specify between rows/columns individually */
+	grid-gap: 4%;
+	/* Distibution of columns */
+	/* Use mobile default */
+	grid-template-columns: 1fr;
+}
+/* END GRID PROPERTIES */
+
+
+/* MY NAME SECTION */
 #title
 {
 	grid-column: 1 / -1;
@@ -113,10 +122,11 @@ a:hover h2
 	text-align: center;
 	margin-bottom: 2%;
 }
+/* END MY NAME SECTION */
+
+
 /* ABOUT ME SECTION */
-
 /* Graphic art of me properties*/
-
 #self > img
 {
 	/* Have object cover entire cell area */
@@ -145,6 +155,7 @@ a:hover h2
 	line-height: 1.5em;
 }
 /* END ABOUT ME SECTION */
+
 
 /* LIST ITEMS/ BUTTON PROPERTIES */
 /* Style the button that is used to open and close the collapsible content */
@@ -200,12 +211,16 @@ a:hover h2
     background-color: #262626;
     margin-bottom: 1%;
 }
+/* END LIST ITEM PROPERTIES */
+
 
 #bottom
 {
 	text-align: center;
 	padding: 1%;
 }
+
+/* MEDIA PROPERTIES */
 /* For desktop configurations set columns to two */
 @media screen and (min-width: 37em) {  
     #wrapper 
@@ -227,5 +242,9 @@ a:hover h2
 		margin-bottom: 0%;
 		border-bottom: 2px solid #303030;
 		padding-bottom: .5%;
+	}
+	#entrance a
+	{
+		top: 88%;
 	}
 }

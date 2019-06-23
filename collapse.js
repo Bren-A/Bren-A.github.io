@@ -16,19 +16,32 @@ for (var i = 0; i < collapsibles.length; i++) {
   });
 }
 
+// Create function remove_home to use in add/remove event listener functions
+/* remove_home gets the homepage div box and gets the coordinates 
+ * If the coordinates end up being outside the screen then the div gets
+ * removed so that it doesn't get scrolled up to again. */
 var remove_home = 
-function() {
-    var elem = document.querySelector('#entrance');
-    var bounding = elem.getBoundingClientRect();
-    console.log(bounding);
-    console.log(window.innerHeight);
-    if (bounding.bottom < 0) 
-    {
-        elem.style.display = 'none';
-        console.log("outside!!");
-        window.removeEventListener("scroll", remove_home);
-    }
-};
+    function() {
+        // Save the first div with id 'entrance'
+        var elem = document.querySelector('#entrance');
+        // Get the bounds for the elemement
+        var bounding = elem.getBoundingClientRect();
+        //console.log(bounding);
+        //console.log(window.innerHeight);
+        // If the bounds have gone up past the top of the screen
+        // i.e. the index of the bottom is negative
+        if (bounding.bottom < 0) 
+        {
+            // Change the div to not display
+            elem.style.display = 'none';
+            // console.log("outside!!");
+            // No need to check for scroll anymore so remove
+            window.removeEventListener("scroll", remove_home);
+        }
+    };
+
+// Check the window every time it is scrolled to see if the homepage
+// is off the screen.
 window.addEventListener("scroll", remove_home);
 
 // Animation for entrance to site.
@@ -39,10 +52,10 @@ window.addEventListener("scroll", remove_home);
 jQuery('.scroll').click(function(e){
     var jump = $(this).attr('href');
     var new_position = $(jump).offset();
-    $('html, body').stop().animate({ scrollTop: new_position.top }, 800);
+    $('html, body').stop().animate({ scrollTop: new_position.top }, 600);
     e.preventDefault();
     // Wait until after scrolled down then hide entrance page
-    setTimeout(function() {$('#entrance').hide();}, 900);
+    //setTimeout(function() {$('#entrance').hide();}, 1200);
     
 
 });

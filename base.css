@@ -101,6 +101,10 @@ a:hover h2
 }
 /* END LANDING PAGE PROPERTIES */
 
+#mainpage
+{
+	min-height: 100.5vh;
+}
 
 /* MY NAME SECTION */
 #title
@@ -113,7 +117,7 @@ a:hover h2
 {
 	font-size: 350%;
 	text-align: center;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 }
 /* END MY NAME SECTION */
 
@@ -137,33 +141,24 @@ a:hover h2
 
 /* ABOUT ME SECTION */
 /* Graphic art of me properties*/
+#self
+{
+	min-height: 100%;
+	position: relative;
+}
 #self > img
 {
+	/*position: absolute;
+	/*transform: translate(0, -20%); 
 	/* Have object cover entire cell area */
     object-fit: cover;
     /* Make it 86% of element area */
     /* Height will automatically scale */
-  	width: 60%;
+  	width: 90%;
   	/* Add margins to photo */
-    margin: 0% 20%;
+    margin: 0% 5%;
 }
 
-/* Modify about box description */
-#about_section
-{
-	/* Keep border slightly away from text */
-	padding: .5% 1%;
-	/* Round box corners */
-	border-radius: 3%;
-	/* Let the background color of the about box be slightly lighter #414447*/
-	background-color: #262626;
-}
-/* about body properties */
-#description
-{
-	/* Change line spacing to 1.5 space*/
-	line-height: 1.5em;
-}
 /* END ABOUT ME SECTION */
 
 
@@ -190,6 +185,7 @@ a:hover h2
   position: relative;
 }
 
+
 .collapsible img
 {	
 	/* Prevent image overflow out of container */
@@ -198,6 +194,11 @@ a:hover h2
 	max-height: 100%;
 	/* Float left to allow text to be on same line */
 	float: left;
+}
+
+#brain .collapsible img
+{
+	height: 90%;
 }
 
 .collapsible h1
@@ -230,6 +231,7 @@ a:hover h2
 
 #bottom
 {
+	display: block;
 	text-align: center;
 	padding: 1%;
 }
@@ -239,7 +241,7 @@ a:hover h2
 @media screen and (min-width: 37em) {  
     #wrapper 
     { 
-        grid-template-columns: 2fr 4fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     #nav_links
@@ -249,12 +251,14 @@ a:hover h2
 	#bottom
 	{
 		grid-column: 1 / -1;
-		border-top: 2px solid #303030;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
 	}
 	#title h1
 	{
 		margin-bottom: 0%;
-		border-bottom: 2px solid #303030;
 		padding-bottom: .5%;
 	}
 	#entrance a

@@ -74,6 +74,7 @@ a:hover h2
 	background-size: cover;
 	background-position: center center;
 	position: relative;
+	margin-bottom: 0%;
 }
 
 #entrance > a, #entrance > a:link, #entrance a:visited
@@ -101,6 +102,22 @@ a:hover h2
 /* END LANDING PAGE PROPERTIES */
 
 
+/* MY NAME SECTION */
+#title
+{
+	margin-top: 0%;
+	grid-column: 1 / -1;
+}
+
+#title h1
+{
+	font-size: 350%;
+	text-align: center;
+	margin-bottom: 2%;
+}
+/* END MY NAME SECTION */
+
+
 /* GRID PROPERTIES */
 /* Change each section into a grid */
 #wrapper
@@ -116,21 +133,6 @@ a:hover h2
 	grid-template-columns: 1fr;
 }
 /* END GRID PROPERTIES */
-
-
-/* MY NAME SECTION */
-#title
-{
-	grid-column: 1 / -1;
-}
-
-#title h1
-{
-	font-size: 350%;
-	text-align: center;
-	margin-bottom: 2%;
-}
-/* END MY NAME SECTION */
 
 
 /* ABOUT ME SECTION */
@@ -168,7 +170,7 @@ a:hover h2
 /* LIST ITEMS/ BUTTON PROPERTIES */
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  padding: 1% 1%;
+  padding: .5% .5%;
   /* Default button color is not transparent */
   background-color: #212121;
   /* Change cursor to be hand whenever over collapsible div */
@@ -184,6 +186,8 @@ a:hover h2
   text-align: left;
   /* Set max button height */
   height: 6em;
+
+  position: relative;
 }
 
 .collapsible img
@@ -200,7 +204,9 @@ a:hover h2
 {
 	/* Keep title name gap same from side */
 	margin-left: 2em;
-	margin-top: .2em;
+	position: absolute;
+	top:50%;
+	transform: translate(0, -50%);
 }
 
 .active, .collapsible:hover {

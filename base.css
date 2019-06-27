@@ -66,6 +66,7 @@ a:hover h2
 
 
 /* LANDING PAGE PROPERTIES */
+/*
 #entrance
 {
 	height: 100vh;
@@ -99,11 +100,12 @@ a:hover h2
 	color: #273E56;
 	transition: .2s;
 }
+*/
 /* END LANDING PAGE PROPERTIES */
 
 #mainpage
 {
-	min-height: 100.5vh;
+	min-height: 100vh;
 }
 
 /* MY NAME SECTION */
@@ -135,7 +137,7 @@ a:hover h2
 	/* Distibution of columns */
 	/* Use mobile default */
 	grid-template-columns: 1fr;
-	max-height: 100vh;
+	max-height: 80vh;
 }
 /* END GRID PROPERTIES */
 
@@ -144,7 +146,7 @@ a:hover h2
 /* Graphic art of me properties*/
 #self
 {
-	min-height: 100%;
+	max-height: 100%;
 	position: relative;
 }
 #self > img
@@ -155,9 +157,9 @@ a:hover h2
     object-fit: cover;
     /* Make it 86% of element area */
     /* Height will automatically scale */
-  	width: 90%;
+  	width: 80%;
   	/* Add margins to photo */
-    margin: 0% 5%;
+    margin: 0% 10%;
 }
 
 /* END ABOUT ME SECTION */
@@ -207,7 +209,7 @@ a:hover h2
 	/* Keep title name gap same from side */
 	margin-left: 2em;
 	position: absolute;
-	top:50%;
+	top: 50%;
 	transform: translate(0, -50%);
 }
 
@@ -244,20 +246,14 @@ a:hover h2
     #wrapper 
     { 
         grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 10fr 1fr;
     }
 
     #nav_links
 	{
-		margin-top: 20%;
+		margin-top: 10%;
 	}
-	
-	#bottom
-	{
-	/*	position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;*/
-	}
+
 	#title h1
 	{
 		margin-bottom: 0%;

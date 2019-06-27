@@ -135,6 +135,7 @@ a:hover h2
 	/* Distibution of columns */
 	/* Use mobile default */
 	grid-template-columns: 1fr;
+	max-height: 100vh;
 }
 /* END GRID PROPERTIES */
 
@@ -191,7 +192,7 @@ a:hover h2
 	/* Prevent image overflow out of container */
 	object-fit: contain;
 	/* make image stretch to full size in box */
-	max-height: 100%;
+	max-height: 90%;
 	/* Float left to allow text to be on same line */
 	float: left;
 }
@@ -234,6 +235,7 @@ a:hover h2
 	display: block;
 	text-align: center;
 	padding: 1%;
+	grid-column: 1/-1;
 }
 
 /* MEDIA PROPERTIES */
@@ -248,13 +250,13 @@ a:hover h2
 	{
 		margin-top: 20%;
 	}
+	
 	#bottom
 	{
-		grid-column: 1 / -1;
-		position: absolute;
+	/*	position: absolute;
 		bottom: 0;
 		left: 0;
-		width: 100%;
+		width: 100%;*/
 	}
 	#title h1
 	{

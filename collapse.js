@@ -1,20 +1,33 @@
 // Save var as list of elements with class "collapsible"
 var collapsibles = document.getElementsByClassName("collapsible");
+// Save all those with class "content"
+var content = document.getElementsByClassName("content")
 // Iterate through all elements with collapsible term
 for (var i = 0; i < collapsibles.length; i++) {
-    // Add property to each div that will make it keep track of click on div
-  collapsibles[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    // On next element
-    var content = this.nextElementSibling;
-    // If already max height, remove max height
-    if (content.style.maxHeight)
-        content.style.maxHeight = null;
-    // Otherwise set maxHeight to height of box.
-    else
-        content.style.maxHeight = content.scrollHeight + "px";
-  });
-}
+    // Everytime a collapsible element is clicked
+    collapsibles[i].onclick = function()
+        {
+            // Check if clicked item is already open
+            // Return True if unopened
+            var setClasses = !this.classList.contains('active');
+            
+            // For all the collapsibles remove active setting
+            for (var j = 0; j < collapsibles.length; j++)
+                collapsibles[j].classList.remove('active');
+            
+            // Make sure all content is shrunk down
+            for (var j = 0; j < content.length; j++)
+                content[j].style.maxHeight = null;
+
+            // If it does not contain active set it to active and open it up
+            if (setClasses) 
+            {
+                this.classList.toggle('active');
+                this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
+            }
+        }
+    }
+
 
 // Create function remove_home to use in add/remove event listener functions
 /* remove_home gets the homepage div box and gets the coordinates 

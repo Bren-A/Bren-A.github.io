@@ -12,7 +12,7 @@ html, body
 	/* Must change html background color and not body */
 	/* Otherwise weird coloring effect takes place */
 	/* In location that there is no CSS boxes */
-	background-color: #212121;
+	background-color: #1E1E1E;
 	/* Prevents box sizes to overflow past sides */
 	/* i.e. prevents horizonal scroll */
 	box-sizing: border-box;
@@ -31,7 +31,7 @@ body
 /* Modify size of h1 text */
 h1
 {
-    color: #6084B4;
+
     font-size: 300%;
 	margin-bottom: 0px;
 	margin-top: 0px;
@@ -41,7 +41,7 @@ h1
 
 h2
 {
-    color: #6084B4;
+    
     font-size: 150%;
 	margin-bottom: 0px;
 	margin-top: 0px;
@@ -53,6 +53,7 @@ h2
 /* Visited link properties */
 a:link, a:visited 
 {
+	color: #188FFF;
     /* Do not highlight when link clicked previously */
     text-decoration: none;
 }
@@ -61,7 +62,8 @@ a:link, a:visited
 a:hover h2
 {
     /* Change color when mouse over */
-    color: #F0F0F0;
+    color: #28427F;
+    transition: .2s;
 }
 
 
@@ -112,14 +114,15 @@ a:hover h2
 #title
 {
 	margin-top: 0%;
-	grid-column: 1 / -1;
+	border-bottom: 2px solid #303030;
+	margin-bottom: 5%;
 }
 
 #title h1
 {
 	font-size: 350%;
 	text-align: center;
-	margin-bottom: 1%;
+	line-height: 1em;
 }
 /* END MY NAME SECTION */
 
@@ -128,16 +131,17 @@ a:hover h2
 /* Change each section into a grid */
 #wrapper
 {
-	padding: 2%;
+	margin: 0%;
+	padding: 0%;
 	/* Turn into CSS grid */
 	display: grid;
 	/* Amount of space between items */
 	/* Can specify between rows/columns individually */
-	grid-gap: 4%;
+	grid-gap: 0%;
 	/* Distibution of columns */
 	/* Use mobile default */
 	grid-template-columns: 1fr;
-	max-height: 80vh;
+
 }
 /* END GRID PROPERTIES */
 
@@ -146,6 +150,7 @@ a:hover h2
 /* Graphic art of me properties*/
 #self
 {
+	margin: 15% 2%;
 	max-height: 100%;
 	position: relative;
 }
@@ -171,6 +176,8 @@ a:hover h2
   padding: .5% .5%;
   /* Default button color is not transparent */
   background-color: #212121;
+  /* Default button color is black */
+  color: #F0F0F0;
   /* Change cursor to be hand whenever over collapsible div */
   cursor: pointer;
   width: 100%;
@@ -214,8 +221,10 @@ a:hover h2
 }
 
 .active, .collapsible:hover {
-    background-color: #303030;
+	color: #FFB31E;
+    background-color: #484B4E;
     transition: .2s;
+    border-bottom: 2px solid #B57815;
 }
 
 .content {
@@ -226,18 +235,19 @@ a:hover h2
     max-height: 0;
     /* Transition content box to max height in .2s */
     transition: max-height 0.2s ease-out;
-    background-color: #262626;
+    background-color: #252728;
     margin-bottom: 1%;
+
 }
 /* END LIST ITEM PROPERTIES */
 
 
 #bottom
 {
-	display: block;
 	text-align: center;
-	padding: 1%;
+	padding: 1% 1%;
 	grid-column: 1/-1;
+	background-color: #060606;
 }
 
 /* MEDIA PROPERTIES */
@@ -245,22 +255,19 @@ a:hover h2
 @media screen and (min-width: 37em) {  
     #wrapper 
     { 
+    	min-height: 100vh;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-rows: 1fr 3.5em;
     }
 
     #nav_links
-	{
-		margin-top: 10%;
-	}
+    {
+    	margin: 10% 2%;
+    }
 
-	#title h1
+	#title
 	{
-		margin-bottom: 0%;
+		margin-bottom: 10%;
 		padding-bottom: .5%;
-	}
-	#entrance a
-	{
-		top: 88%;
 	}
 }

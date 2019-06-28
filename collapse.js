@@ -28,6 +28,28 @@ for (var i = 0; i < collapsibles.length; i++) {
         }
     }
 
+//I'm using "click" but it works with any event
+document.addEventListener('click', function(event) 
+{
+
+    var isClickInside = false;
+    for(var i = 0; i < collapsibles.length; i++)
+    {
+        if(collapsibles[i].contains(event.target))
+            isClickInside = true;
+    }
+  
+
+    if (!isClickInside) {
+        // For all the collapsibles remove active setting
+        for (var j = 0; j < collapsibles.length; j++)
+            collapsibles[j].classList.remove('active');
+    
+        // Make sure all content is shrunk down
+        for (var j = 0; j < content.length; j++)
+            content[j].style.maxHeight = null;
+    }
+});
 
 // Create function remove_home to use in add/remove event listener functions
 /* remove_home gets the homepage div box and gets the coordinates 

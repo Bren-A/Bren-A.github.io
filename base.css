@@ -115,7 +115,7 @@ a:hover h2
 {
 	margin-top: 0%;
 	border-bottom: 2px solid #303030;
-	margin-bottom: 5%;
+	margin-bottom: 8%;
 }
 
 #title h1
@@ -150,7 +150,7 @@ a:hover h2
 /* Graphic art of me properties*/
 #self
 {
-	margin: 15% 2%;
+	margin: 10% 0% 2% 2%;
 	max-height: 100%;
 	position: relative;
 }

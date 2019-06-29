@@ -28,18 +28,20 @@ for (var i = 0; i < collapsibles.length; i++) {
         }
     }
 
-//I'm using "click" but it works with any event
+// Checks the whole window for any clicks
 document.addEventListener('click', function(event) 
 {
-
+    // Default is clicked outside of collapsibles
     var isClickInside = false;
+    // Check every collapsible item
     for(var i = 0; i < collapsibles.length; i++)
     {
+        // If the item has the click inside it return true
         if(collapsibles[i].contains(event.target))
             isClickInside = true;
     }
   
-
+    // If there is no click inside collapsibles close the descriptions
     if (!isClickInside) {
         // For all the collapsibles remove active setting
         for (var j = 0; j < collapsibles.length; j++)

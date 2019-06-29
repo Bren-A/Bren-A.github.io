@@ -12,7 +12,7 @@ html, body
 	/* Must change html background color and not body */
 	/* Otherwise weird coloring effect takes place */
 	/* In location that there is no CSS boxes */
-	background-color: #1E1E1E;
+	background-color: #1E2123;
 	/* Prevents box sizes to overflow past sides */
 	/* i.e. prevents horizonal scroll */
 	box-sizing: border-box;
@@ -114,7 +114,7 @@ a:hover h2
 #title
 {
 	margin-top: 0%;
-	border-bottom: 2px solid #303030;
+	border-bottom: 2px solid #717177;
 	margin-bottom: 8%;
 }
 
@@ -175,7 +175,7 @@ a:hover h2
 .collapsible {
   padding: .5% .5%;
   /* Default button color is not transparent */
-  background-color: #212121;
+  background-color: #1E2123;
   /* Default button color is black */
   color: #F0F0F0;
   /* Change cursor to be hand whenever over collapsible div */
@@ -186,7 +186,7 @@ a:hover h2
   /* Remove button outline when clicked */
   outline: none;
   /* Add a bit of border to separate entries */
-  border-bottom: 2px solid #303030;
+  border-bottom: 2px solid #717177;
   /* Button is center default. Move left */
   text-align: left;
   /* Set max button height */
@@ -222,8 +222,8 @@ a:hover h2
 
 .active, .collapsible:hover {
 	color: #FFB31E;
-    background-color: #484B4E;
-    transition: .2s;
+    background-color: #3F474E;
+    transition: .3s;
     border-bottom: 2px solid #B57815;
 }
 
@@ -235,7 +235,7 @@ a:hover h2
     max-height: 0;
     /* Transition content box to max height in .2s */
     transition: max-height 0.2s ease-out;
-    background-color: #252728;
+    background-color: #24292E;
     margin-bottom: 1%;
 
 }
@@ -262,12 +262,12 @@ a:hover h2
 
     #nav_links
     {
-    	margin: 10% 2%;
+    	margin: 5% 2%;
     }
 
 	#title
 	{
-		margin-bottom: 10%;
+		margin-bottom: 15%;
 		padding-bottom: .5%;
 	}
 }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<!-- Add CSS stylesheet and tab title -->
+<head>
+    <title> Blogs </title>
+    <link type = "text/css" rel = "stylesheet" href = "./base.css">
+    <!-- Import jQuery package 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    -->
+</head>
+
+<!-- Main body -->
+<body>
+<!-- Necessary for proper scaling when in mobile -->
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+<!-- Title page -->
+<!--
+<div id="entrance">
+        <a class="scroll" href="#title">Enter</a>
+</div>
+-->
+<div id = "mainpage">
+<!-- CSS Grid Wrapper -->
+<div id = "wrapper">
+        
+    <!-- Graphic art -->
+    <div id = "self">
+        <h1>Blogpage</h1>
+        <p>
+            I have divided up my blogs into a few categories described here.
+        </p>
+    </div>
+
+    <!-- Links and description leading to other pages -->
+    <div id = "nav_links">
+        <!-- My name -->
+        <div id = "title">
+            <h1>Blogs</h1>
+        </div>
+        <!-- About me description -->
+        <button class="collapsible" id="brain"><img src = "./about_me.png"><h1>About Me</h1></button>
+        <div class = "content">
+            Studd
+        </div>
+        <button class="collapsible"><img src = "./document.png"><h1>Resume</h1></button>
+        <div class="content">
+            <p>A current copy of my resume.</p>
+            <br>
+            <a href = "./General.pdf"><h2>Open resume here</h2></a>
+            <br>
+        </div>
+        <!-- Simple javascript function reveals div on click -->
+        <script src = "collapse.js"></script>
+
+    </div>
+
+    <!-- Keep this info at the bottom of the page -->
+    <div id = "bottom", style = "font-size: 2em; color: #F0F0F0;">
+        <b>Endpage</b>
+    </div>
+<!-- End CSS Grid -->
+</div>
+</div>
+</body>
+</html>

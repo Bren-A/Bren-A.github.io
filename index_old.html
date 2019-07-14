@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<!-- Add CSS stylesheet and tab title -->
+<head>
+    <title> About Me </title>
+    <link type = "text/css" rel = "stylesheet" href = "./base.css">
+    <!-- Import jQuery package 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    -->
+</head>
+
+<!-- Main body -->
+<body>
+<!-- Necessary for proper scaling when in mobile -->
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+<!-- Title page -->
+<!--
+<div id="entrance">
+        <a class="scroll" href="#title">Enter</a>
+</div>
+-->
+<div id = "mainpage">
+<!-- CSS Grid Wrapper -->
+<div id = "wrapper">
+        
+    <!-- Graphic art -->
+    <div id = "self">
+        <img src = "./self.png">
+    </div>
+
+    <!-- Links and description leading to other pages -->
+    <div id = "nav_links">
+        <!-- My name -->
+        <div id = "title">
+            <h1>Brendan Alger</h1>
+        </div>
+        <!-- About me description -->
+        <button class="collapsible" id="brain"><img src = "./about_me.png"><h1>About Me</h1></button>
+        <div class="content">
+            <p>
+            My name is Brendan and I am a programmer.
+            </p>
+            <p>
+            I graduated from the University of California, Los Angeles (UCLA) with a 
+            Bachelors in Linguistics and Computer Science in 2019. I love learning and 
+            constantly make an effort to find and embrace new challenges and responsibilities. 
+            I pay great attention to detail, as exemplified in my work in which I implement innovation and 
+            effectiveness at the highest standard of technical excellence that I can.
+            </p>
+            <p>
+            Outside of programming,
+            I am an avid maker and love crafting and doing things with my own hands. I have a variety of 
+            interests from origami to classic car restoration which you can find on my blogs.
+            </p>
+            <p>
+            On this page you will find some links to access information about me and some of my side 
+            projects/hobbies. Feel free to look around!!
+            </p>
+            <br>
+        </div>
+        <button class="collapsible"><img src = "./document.png"><h1>Resume</h1></button>
+        <div class="content">
+            <p>A current copy of my resume.</p>
+            <br>
+            <a href = "./General.pdf"><h2>Open resume here</h2></a>
+            <br>
+        </div>
+        <button class="collapsible"><img src = "./Github.png"><h1>Github</h1></button>
+        <div class="content">
+            <p>Link to my Github profile containing some of the projects I have previously worked on.</p>
+            <br>
+            <a href = "https://github.com/Bren-A/"><h2>Open github here</h2></a>
+            <br>
+        </div>
+        <button class="collapsible"><img src = "./typewriter.png"><h1>Blogs</h1></button>
+        <div class="content">
+            <p>
+                A variety of writeups I've done ranging from my personal coding projects
+                to craft projects and notes.
+            </p>
+            <br>
+            <a href = "./oops.jpg"><h2>Go to blog homepage here</h2></a>
+            <br>
+        </div>
+
+        <!-- Simple javascript function reveals div on click -->
+        <script src = "collapse.js"></script>
+
+    </div>
+
+    <!-- Keep this info at the bottom of the page -->
+    <div id = "bottom", style = "font-size: 2em; color: #F0F0F0;">
+        <b>Endpage</b>
+    </div>
+<!-- End CSS Grid -->
+</div>
+</div>
+</body>
+</html>
